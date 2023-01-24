@@ -23,7 +23,7 @@ input{
 
     height: 35vh;
 
-    background-image: url("/images/pattern-bg.png");
+    background-image: url("images/pattern-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -144,13 +144,13 @@ input{
 
 /* ######################### Mobile mode ######################### */
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:1100px) {
 
     .info_modal{
 
         bottom: -28vh;
 
-        width: 340px;
+        width: 280px;
         height: 40vh;
     
         display: flex;
@@ -182,4 +182,7 @@ input{
     display: none;
 }
     
+.search_bar input::placeholder {
+    font-size: 16px;
+  }
 }
