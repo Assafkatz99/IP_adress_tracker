@@ -13,27 +13,37 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-    crossorigin=""/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>IP Address Tracker</title>
   </head>
 
   <body>
-
-
-<!-- ######################### Upper Box ######################### -->
+    <!-- ######################### Upper Box ######################### -->
     <div class="upper_box">
-        <div class="upper_box_content">
-          <span>IP Address Tracker</span>
-          <div class="search_bar">
-            <input id="search_input_id" type="text" placeholder="Search for any IP address or domain"></input>
-            <button id="search_button_id"><img src="images/icon-arrow.svg" alt="SVG Image"></button>
+      <div class="upper_box_content">
+        <span>IP Address Tracker</span>
+        <div class="search_bar">
+          <input
+            id="search_input_id"
+            type="text"
+            placeholder="Search for any IP address or domain"
+          />
+          <button id="search_button_id">
+            <img src="images/icon-arrow.svg" alt="SVG Image" />
+          </button>
         </div>
       </div>
 
@@ -41,42 +51,47 @@
       <div class="info_modal">
         <div class="info_modal_box">
           <p class="info_modal_headline">IP ADDRESS</p>
-          <span class="info_modal_content" id="ip_address_span_id">121.121.121.12</span>
+          <span class="info_modal_content" id="ip_address_span_id"
+            >121.121.121.12</span
+          >
         </div>
-      <section class="small_border"></section>
+        <section class="small_border"></section>
         <div class="info_modal_box">
           <p class="info_modal_headline">LOCATION</p>
-          <span class="info_modal_content" id="location_span_id">Binyamina, IL</span>
+          <span class="info_modal_content" id="location_span_id"
+            >Binyamina, IL</span
+          >
         </div>
         <section class="small_border"></section>
         <div class="info_modal_box">
           <p class="info_modal_headline">TIMEZONE</p>
-          <span class="info_modal_content" id="timezone_span_id">UTC +02:00</span>
+          <span class="info_modal_content" id="timezone_span_id"
+            >UTC +02:00</span
+          >
         </div>
         <section class="small_border"></section>
         <div class="info_modal_box">
           <p class="info_modal_headline">ISP</p>
-          <span class="info_modal_content" id="isp_span_id">Moveo's course</span>
+          <span class="info_modal_content" id="isp_span_id"
+            >Moveo's course</span
+          >
         </div>
       </div>
     </div>
 
-<!-- ######################### Map - Bottom Box ######################### -->
+    <!-- ######################### Map - Bottom Box ######################### -->
 
-    <div id="map" class="map_bottom_box">
-      
-    </div>
+    <div id="map" class="map_bottom_box"></div>
 
-
-
-
-<!-- <div class="attribution">
+    <!-- <div class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
   Coded by <a href="#">Your Name Here</a>.
 </div> -->
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-  crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>

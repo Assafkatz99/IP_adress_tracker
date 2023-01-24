@@ -1,188 +1,172 @@
-*{
-    font-family: 'Rubik', sans-serif;
+* {
+  font-family: "Rubik", sans-serif;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-button{
-    all: unset;
+button {
+  all: unset;
 }
-input{
-    all: unset;
+input {
+  all: unset;
 }
-
 
 /* ######################### Upper Box ######################### */
 
-.upper_box{
-    display: flex;
-    flex-direction: column;
+.upper_box {
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
+  align-items: center;
 
-    height: 35vh;
+  height: 35vh;
 
-    background-image: url("images/pattern-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    position: relative;
+  position: relative;
 }
 
-.upper_box_content{
-    display: flex;
-    flex-direction: column;
-    
-    height: 25vh;
+.upper_box_content {
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    justify-content: center
+  height: 25vh;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.upper_box_content span{
-    color: white;
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+.upper_box_content span {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
-.search_bar button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border-radius: 0px 15px 15px 0px;
-    width: 58px;
-    height: 58px;
+.search_bar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 0px 15px 15px 0px;
+  width: 58px;
+  height: 58px;
 }
 
-.search_bar button:hover{
-    cursor: pointer;
-    background-color: #2B2B2B;
+.search_bar button:hover {
+  cursor: pointer;
+  background-color: #2b2b2b;
 }
 
-.search_bar input{
-    background-color: white;
-    padding-left: 10px;
-    border-radius: 15px 0px 0px 15px;
-    min-width: 272px;
-    width: 40vw;
-    height: 58px;
+.search_bar input {
+  background-color: white;
+  padding-left: 10px;
+  border-radius: 15px 0px 0px 15px;
+  min-width: 272px;
+  width: 40vw;
+  height: 58px;
 }
 
-.search_bar{
-    display: flex;
-    align-items: center;
+.search_bar {
+  display: flex;
+  align-items: center;
 }
-
-
 
 /* ######################### Info Modal ######################### */
 
-.info_modal{
-    z-index: 1;
-    position: absolute;
-    bottom: -10vh;
-    left: 50%;
-    transform: translate(-50%);
-  
+.info_modal {
+  z-index: 1;
+  position: absolute;
+  bottom: -10vh;
+  left: 50%;
+  transform: translate(-50%);
 
-    background-color: white;
-    /* box-shadow: -1px 3px 20px 0px #88888829; */
-    box-shadow: -1px 11px 20px 0px #00000073;
-    width: 80vw;
-    height: 20vh;
-    border-radius: 15px;
+  background-color: white;
+  /* box-shadow: -1px 3px 20px 0px #88888829; */
+  box-shadow: -1px 11px 20px 0px #00000073;
+  width: 80vw;
+  height: 20vh;
+  border-radius: 15px;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-.info_modal_box{
-    box-sizing: border-box;
-    padding: 30px 60px 0px 30px;
-    height: 100%;
-    width: 25%;
+.info_modal_box {
+  box-sizing: border-box;
+  padding: 30px 60px 0px 30px;
+  height: 100%;
+  width: 25%;
 }
 
-.info_modal_headline{
-    font-size: 13px;
-    font-weight: 600;
-    color:#969696 ;
-    margin-bottom: 10px;
-
+.info_modal_headline {
+  font-size: 13px;
+  font-weight: 600;
+  color: #969696;
+  margin-bottom: 10px;
 }
 
-.info_modal_content{
-    font-size: 26px;
-    font-weight: 500;
-    color:#2B2B2B ;
+.info_modal_content {
+  font-size: 26px;
+  font-weight: 500;
+  color: #2b2b2b;
 }
 
-
-.small_border{
-    height: 50% ;
-    width: 1px;
-    background-color:#969696 ;
-    
+.small_border {
+  height: 50%;
+  width: 1px;
+  background-color: #969696;
 }
-
 
 /* ######################### Map - Bottom Box ######################### */
 
-.map_bottom_box{
-    height: 65vh;
-    z-index: 0;
+.map_bottom_box {
+  height: 65vh;
+  z-index: 0;
 }
-
-
-
 
 /* ######################### Mobile mode ######################### */
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width: 1100px) {
+  .info_modal {
+    bottom: -28vh;
 
-    .info_modal{
+    width: 280px;
+    height: 40vh;
 
-        bottom: -28vh;
+    display: flex;
+    flex-direction: column;
 
-        width: 280px;
-        height: 40vh;
-    
-        display: flex;
-        flex-direction: column;
+    text-align: center;
+  }
 
-        text-align: center;
-    
-    }
+  .info_modal_headline {
+    margin-bottom: 12px;
+  }
 
-    .info_modal_headline{
-        margin-bottom: 12px;
-    }
+  .info_modal_content {
+    font-size: 23px;
+    font-weight: 500;
+    color: #2b2b2b;
+  }
 
-    .info_modal_content{
-        font-size: 23px;
-        font-weight: 500;
-        color:#2B2B2B ;
-    }
-
-    .info_modal_box{
-        display:flex ;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding: 12px 0px 0px 0px;
-        height: 25%;
-        width: 100%;
-    }
-.small_border{
+  .info_modal_box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 12px 0px 0px 0px;
+    height: 25%;
+    width: 100%;
+  }
+  .small_border {
     display: none;
-}
-    
-.search_bar input::placeholder {
+  }
+
+  .search_bar input::placeholder {
     font-size: 16px;
   }
 }
