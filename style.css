@@ -1,0 +1,185 @@
+*{
+    font-family: 'Rubik', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    all: unset;
+}
+input{
+    all: unset;
+}
+
+
+/* ######################### Upper Box ######################### */
+
+.upper_box{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 35vh;
+
+    background-image: url("/images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.upper_box_content{
+    display: flex;
+    flex-direction: column;
+    
+    height: 25vh;
+
+    align-items: center;
+    justify-content: center
+}
+
+.upper_box_content span{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.search_bar button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 0px 15px 15px 0px;
+    width: 58px;
+    height: 58px;
+}
+
+.search_bar button:hover{
+    cursor: pointer;
+    background-color: #2B2B2B;
+}
+
+.search_bar input{
+    background-color: white;
+    padding-left: 10px;
+    border-radius: 15px 0px 0px 15px;
+    min-width: 272px;
+    width: 40vw;
+    height: 58px;
+}
+
+.search_bar{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* ######################### Info Modal ######################### */
+
+.info_modal{
+    z-index: 1;
+    position: absolute;
+    bottom: -10vh;
+    left: 50%;
+    transform: translate(-50%);
+  
+
+    background-color: white;
+    /* box-shadow: -1px 3px 20px 0px #88888829; */
+    box-shadow: -1px 11px 20px 0px #00000073;
+    width: 80vw;
+    height: 20vh;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.info_modal_box{
+    box-sizing: border-box;
+    padding: 30px 60px 0px 30px;
+    height: 100%;
+    width: 25%;
+}
+
+.info_modal_headline{
+    font-size: 13px;
+    font-weight: 600;
+    color:#969696 ;
+    margin-bottom: 10px;
+
+}
+
+.info_modal_content{
+    font-size: 26px;
+    font-weight: 500;
+    color:#2B2B2B ;
+}
+
+
+.small_border{
+    height: 50% ;
+    width: 1px;
+    background-color:#969696 ;
+    
+}
+
+
+/* ######################### Map - Bottom Box ######################### */
+
+.map_bottom_box{
+    height: 65vh;
+    z-index: 0;
+}
+
+
+
+
+/* ######################### Mobile mode ######################### */
+
+@media screen and (max-width:620px) {
+
+    .info_modal{
+
+        bottom: -28vh;
+
+        width: 340px;
+        height: 40vh;
+    
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+    
+    }
+
+    .info_modal_headline{
+        margin-bottom: 12px;
+    }
+
+    .info_modal_content{
+        font-size: 23px;
+        font-weight: 500;
+        color:#2B2B2B ;
+    }
+
+    .info_modal_box{
+        display:flex ;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 12px 0px 0px 0px;
+        height: 25%;
+        width: 100%;
+    }
+.small_border{
+    display: none;
+}
+    
+}
