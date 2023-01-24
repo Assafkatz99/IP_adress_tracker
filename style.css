@@ -134,7 +134,7 @@ input {
   .info_modal {
     bottom: -28vh;
 
-    width: 300px;
+    width: 290px;
     height: 40vh;
 
     display: flex;
@@ -166,7 +166,7 @@ input {
   }
 
   .search_bar input {
-    min-width: 232px;
+    min-width: 222px;
   }
   .search_bar input::placeholder {
     font-size: 13px;
